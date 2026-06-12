@@ -25,4 +25,6 @@ services:
     name: agent-redis
     region: singapore
     plan: free
-    ipAllowList: []
+    ipAllowList:
+      - source: 0.0.0.0/0
+        description: allow all IPs
