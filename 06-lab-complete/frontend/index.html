@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Agent Studio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar for Settings -->
+        <aside class="sidebar glass-panel">
+            <div class="sidebar-header">
+                <h2><span class="gradient-text">Agent</span> Config</h2>
+            </div>
+            <div class="form-group">
+                <label for="api-key">API Key</label>
+                <input type="password" id="api-key" placeholder="Enter secret key..." value="secret">
+            </div>
+            <div class="form-group">
+                <label for="user-id">User ID</label>
+                <input type="text" id="user-id" placeholder="Enter your ID..." value="u1">
+            </div>
+            <div class="system-status">
+                <div class="status-indicator">
+                    <span class="pulse-dot"></span> System Ready
+                </div>
+                <div class="rate-info">Limit: 10 requests / min</div>
+            </div>
+        </aside>
+
+        <!-- Main Chat Area -->
+        <main class="chat-container glass-panel">
+            <header class="chat-header">
+                <h1>Chat with <span class="gradient-text">AI Agent</span></h1>
+            </header>
+            
+            <div class="chat-history" id="chat-history">
+                <div class="message system-msg">
+                    <p>Welcome! Configure your API key on the left and start chatting.</p>
+                </div>
+            </div>
+
+            <form class="chat-input-area" id="chat-form">
+                <input type="text" id="question-input" placeholder="Type your message here..." autocomplete="off" required>
+                <button type="submit" class="send-btn">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                </button>
+            </form>
+        </main>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
