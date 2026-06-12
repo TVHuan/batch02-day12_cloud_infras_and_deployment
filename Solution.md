@@ -58,4 +58,4 @@ Kiến trúc luồng xử lý:
 
 ---
 ## Part 6: Lab Assignment - Final Project Deployment
-**API URL Link:** `link prod`
+**API URL Link:** `https://ai-agent-production-ehmc.onrender.com`
